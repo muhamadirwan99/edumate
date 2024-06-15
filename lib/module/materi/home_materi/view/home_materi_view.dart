@@ -60,7 +60,7 @@ class HomeMateriView extends StatefulWidget {
                             Expanded(
                               child: SvgPicture.asset(
                                 "assets/images/materi/banner_materi.svg",
-                                height: 150,
+                                height: 125,
                               ),
                             ),
                           ],

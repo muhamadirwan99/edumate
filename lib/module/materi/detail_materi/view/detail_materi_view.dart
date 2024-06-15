@@ -1,5 +1,3 @@
-import 'package:edumate/module/materi/image_materi/view/image_materi_view.dart';
-import 'package:edumate/module/materi/rumus_materi/view/rumus_materi_view.dart';
 import 'package:flutter/material.dart';
 import 'package:edumate/core.dart';
 
@@ -36,6 +34,9 @@ class DetailMateriView extends StatefulWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 50.0),
                     child: Column(
                       children: [
+                        const SizedBox(
+                          height: 20.0,
+                        ),
                         SvgPicture.asset(
                           controller.assetImage,
                         ),
@@ -178,18 +179,18 @@ class DetailMateriView extends StatefulWidget {
                         ),
                       ),
                       Positioned(
-                        top: -40.0,
+                        top: -30.0,
                         left: 0,
                         right: 0,
-                        child: InkWell(
+                        child: GestureDetector(
                           onTap: () {
                             Get.to(
                               ImageMateriView(kdMateri: kdMateri),
                             );
                           },
                           child: Container(
-                            width: 75,
-                            height: 75,
+                            width: 60,
+                            height: 60,
                             decoration: BoxDecoration(
                               color: Colors.white,
                               shape: BoxShape.circle,
