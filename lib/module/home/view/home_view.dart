@@ -98,7 +98,7 @@ class HomeView extends StatefulWidget {
                       title: "Materi",
                       subtitle: "Bangun Datar",
                       onTap: () {
-                        Get.to(const MateriView());
+                        Get.to(const HomeMateriView());
                       },
                     ),
                     const SizedBox(

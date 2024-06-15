@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:edumate/core.dart';
 
-class MateriView extends StatefulWidget {
-  const MateriView({super.key});
+class HomeMateriView extends StatefulWidget {
+  const HomeMateriView({super.key});
 
-  Widget build(context, MateriController controller) {
+  Widget build(context, HomeMateriController controller) {
     controller.view = this;
 
     return Scaffold(
@@ -94,18 +94,27 @@ class MateriView extends StatefulWidget {
                       children: [
                         Expanded(
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Get.to(
+                                DetailMateriView(
+                                  kdMateri: materiLeft.kdMateri,
+                                ),
+                              );
+                            },
                             child: SvgPicture.asset(
                               materiLeft.assets,
                             ),
                           ),
                         ),
-                        const SizedBox(
-                          width: 12.0,
-                        ),
                         Expanded(
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Get.to(
+                                DetailMateriView(
+                                  kdMateri: materiRight.kdMateri,
+                                ),
+                              );
+                            },
                             child: SvgPicture.asset(
                               materiRight.assets,
                             ),
@@ -124,5 +133,5 @@ class MateriView extends StatefulWidget {
   }
 
   @override
-  State<MateriView> createState() => MateriController();
+  State<HomeMateriView> createState() => HomeMateriController();
 }

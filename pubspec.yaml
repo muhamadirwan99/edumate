@@ -55,6 +55,7 @@ flutter:
     - assets/images/logo/
     - assets/images/home/
     - assets/images/materi/
+    - assets/images/materi/detail_materi/
     - assets/images/buku/
     - assets/images/background/
     - assets/icons/misc/

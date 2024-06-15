@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:edumate/core.dart';
-import '../view/materi_view.dart';
+import '../view/home_materi_view.dart';
 
-class MateriController extends State<MateriView> {
-  static late MateriController instance;
-  late MateriView view;
+class HomeMateriController extends State<HomeMateriView> {
+  static late HomeMateriController instance;
+  late HomeMateriView view;
 
   List<List<MateriModel>> materiAssets = [
     [
