@@ -1,7 +1,8 @@
 {
     "modules": [
         "splashscreen",
-        "home"
+        "home",
+        "materi"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,

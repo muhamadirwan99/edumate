@@ -54,6 +54,8 @@ flutter:
   assets:
     - assets/images/logo/
     - assets/images/home/
+    - assets/images/materi/
+    - assets/images/buku/
     - assets/images/background/
     - assets/icons/misc/
   # An image asset can refer to one or more resolution-specific "variants", see
