@@ -5,7 +5,9 @@
         "materi/home_materi",
         "materi/detail_materi",
         "materi/sifat_rumus_materi",
-        "materi/image_materi"
+        "materi/image_materi",
+        "video/home_video",
+        "video/detail_video"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
