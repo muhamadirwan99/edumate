@@ -89,14 +89,16 @@ class DetailMateriView extends StatefulWidget {
                               const SizedBox(
                                 height: 20.0,
                               ),
-                              Text(
-                                controller.description,
-                                style: GoogleFonts.montserrat(
-                                  color: primaryColor,
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
+                              Expanded(
+                                child: Text(
+                                  controller.description,
+                                  style: GoogleFonts.montserrat(
+                                    color: primaryColor,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                  textAlign: TextAlign.center,
                                 ),
-                                textAlign: TextAlign.center,
                               ),
                               const SizedBox(
                                 height: 31.0,
@@ -104,36 +106,38 @@ class DetailMateriView extends StatefulWidget {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  InkWell(
-                                    onTap: () {
-                                      Get.to(
-                                        SifatRumusMateriView(
-                                          kdMateri: kdMateri,
-                                          isSifat: true,
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      width: 100,
-                                      decoration: BoxDecoration(
-                                        color: controller.containerColor,
-                                        borderRadius: const BorderRadius.all(
-                                          Radius.circular(
-                                            24.0,
+                                  Expanded(
+                                    child: InkWell(
+                                      onTap: () {
+                                        Get.to(
+                                          SifatRumusMateriView(
+                                            kdMateri: kdMateri,
+                                            isSifat: true,
+                                          ),
+                                        );
+                                      },
+                                      child: Container(
+                                        width: 100,
+                                        decoration: BoxDecoration(
+                                          color: controller.containerColor,
+                                          borderRadius: const BorderRadius.all(
+                                            Radius.circular(
+                                              24.0,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.symmetric(
-                                          vertical: 5.0,
-                                        ),
-                                        child: Center(
-                                          child: Text(
-                                            "Sifat",
-                                            style: GoogleFonts.montserrat(
-                                              color: controller.textColor,
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.w600,
+                                        child: Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                            vertical: 5.0,
+                                          ),
+                                          child: Center(
+                                            child: Text(
+                                              "Sifat",
+                                              style: GoogleFonts.montserrat(
+                                                color: controller.textColor,
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.w600,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -143,35 +147,37 @@ class DetailMateriView extends StatefulWidget {
                                   const SizedBox(
                                     width: 20.0,
                                   ),
-                                  InkWell(
-                                    onTap: () {
-                                      Get.to(
-                                        SifatRumusMateriView(
-                                          kdMateri: kdMateri,
-                                          isSifat: false,
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      width: 100,
-                                      decoration: BoxDecoration(
-                                        color: controller.containerColor,
-                                        borderRadius: const BorderRadius.all(
-                                          Radius.circular(
-                                            24.0,
+                                  Expanded(
+                                    child: InkWell(
+                                      onTap: () {
+                                        Get.to(
+                                          SifatRumusMateriView(
+                                            kdMateri: kdMateri,
+                                            isSifat: false,
+                                          ),
+                                        );
+                                      },
+                                      child: Container(
+                                        width: 100,
+                                        decoration: BoxDecoration(
+                                          color: controller.containerColor,
+                                          borderRadius: const BorderRadius.all(
+                                            Radius.circular(
+                                              24.0,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.symmetric(
-                                            vertical: 5.0),
-                                        child: Center(
-                                          child: Text(
-                                            "Rumus",
-                                            style: GoogleFonts.montserrat(
-                                              color: controller.textColor,
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.w600,
+                                        child: Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              vertical: 5.0),
+                                          child: Center(
+                                            child: Text(
+                                              "Rumus",
+                                              style: GoogleFonts.montserrat(
+                                                color: controller.textColor,
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.w600,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -179,6 +185,9 @@ class DetailMateriView extends StatefulWidget {
                                     ),
                                   ),
                                 ],
+                              ),
+                              const SizedBox(
+                                height: 12.0,
                               ),
                             ],
                           ),

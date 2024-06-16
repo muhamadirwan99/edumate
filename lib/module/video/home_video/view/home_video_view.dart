@@ -94,10 +94,20 @@ class HomeVideoView extends StatefulWidget {
                     itemBuilder: (BuildContext context, int index) {
                       final VideoModel videoModel =
                           controller.listVideoModel[index];
+                      List<VideoModel> videoListCopy =
+                          List<VideoModel>.from(controller.listVideoModel);
+
                       return Container(
                         padding: const EdgeInsets.only(bottom: 24),
                         child: CardVideo(
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(
+                              DetailVideoView(
+                                videoModel: videoModel,
+                                videoList: videoListCopy,
+                              ),
+                            );
+                          },
                           title: videoModel.title,
                           author: videoModel.author,
                           thumbnail: videoModel.thumbnail,

@@ -38,7 +38,7 @@ class CaredMenuHome extends StatelessWidget {
                   vertical: 20,
                 ),
                 child: SizedBox(
-                  width: 105,
+                  width: MediaQuery.of(context).size.width,
                   height: 105,
                   child: SvgPicture.asset(
                     svgAsset,

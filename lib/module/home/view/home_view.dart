@@ -92,26 +92,30 @@ class HomeView extends StatefulWidget {
                 ),
                 Row(
                   children: [
-                    CaredMenuHome(
-                      color: const Color(0xffFFD99E),
-                      svgAsset: "assets/images/home/materi.svg",
-                      title: "Materi",
-                      subtitle: "Bangun Datar",
-                      onTap: () {
-                        Get.to(const HomeMateriView());
-                      },
+                    Expanded(
+                      child: CaredMenuHome(
+                        color: const Color(0xffFFD99E),
+                        svgAsset: "assets/images/home/materi.svg",
+                        title: "Materi",
+                        subtitle: "Bangun Datar",
+                        onTap: () {
+                          Get.to(const HomeMateriView());
+                        },
+                      ),
                     ),
                     const SizedBox(
                       width: 43.0,
                     ),
-                    CaredMenuHome(
-                      color: const Color(0xff9FC8FF),
-                      svgAsset: "assets/images/home/video.svg",
-                      title: "Video",
-                      subtitle: "Pembelajaran ",
-                      onTap: () {
-                        Get.to(const HomeVideoView());
-                      },
+                    Expanded(
+                      child: CaredMenuHome(
+                        color: const Color(0xff9FC8FF),
+                        svgAsset: "assets/images/home/video.svg",
+                        title: "Video",
+                        subtitle: "Pembelajaran ",
+                        onTap: () {
+                          Get.to(const HomeVideoView());
+                        },
+                      ),
                     ),
                   ],
                 ),
@@ -120,20 +124,24 @@ class HomeView extends StatefulWidget {
                 ),
                 const Row(
                   children: [
-                    CaredMenuHome(
-                      color: Color(0xffFFB8B8),
-                      svgAsset: "assets/images/home/buku_paket.svg",
-                      title: "Buku Paket",
-                      subtitle: "Matematika",
+                    Expanded(
+                      child: CaredMenuHome(
+                        color: Color(0xffFFB8B8),
+                        svgAsset: "assets/images/home/buku_paket.svg",
+                        title: "Buku Paket",
+                        subtitle: "Matematika",
+                      ),
                     ),
                     SizedBox(
                       width: 43.0,
                     ),
-                    CaredMenuHome(
-                      color: Color(0xffC8FF9E),
-                      svgAsset: "assets/images/home/uji_kemampuan.svg",
-                      title: "Uji Kemampuan",
-                      subtitle: "Siswa",
+                    Expanded(
+                      child: CaredMenuHome(
+                        color: Color(0xffC8FF9E),
+                        svgAsset: "assets/images/home/uji_kemampuan.svg",
+                        title: "Uji Kemampuan",
+                        subtitle: "Siswa",
+                      ),
                     ),
                   ],
                 ),

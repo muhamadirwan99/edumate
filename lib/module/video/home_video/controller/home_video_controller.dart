@@ -13,6 +13,7 @@ class HomeVideoController extends State<HomeVideoView> {
           "Mengenal dan Menentukan Sisi, Sudut, dan Titik Sudut Bangun Datar",
       author: "@fitriahastuti6199",
       thumbnail: "assets/images/video/thumbnail/thumbnail_1.png",
+      idYt: "PIdOXSZtILY",
       bgColor: Color(0xffFFE4BB),
       decorationColor: Color(0xffEFB357),
     ),
@@ -21,6 +22,7 @@ class HomeVideoController extends State<HomeVideoView> {
       title: "Nama Dan Bentuk Bangun Datar",
       author: "@BundaZoya14",
       thumbnail: "assets/images/video/thumbnail/thumbnail_2.png",
+      idYt: "rfDMcFdk_YI",
       bgColor: Color(0xffFFD6D6),
       decorationColor: Color(0xffD04848),
     ),
@@ -29,6 +31,7 @@ class HomeVideoController extends State<HomeVideoView> {
       title: "BELAJAR MENGENAL BANGUN DATAR",
       author: "@alfariqchannel804",
       thumbnail: "assets/images/video/thumbnail/thumbnail_3.png",
+      idYt: "lhsvjtYUwcc",
       bgColor: Color(0xffC4FFFF),
       decorationColor: Color(0xff63A7A7),
     ),
@@ -37,6 +40,7 @@ class HomeVideoController extends State<HomeVideoView> {
       title: "Simetri Lipat Bangun datar",
       author: "@EroKusnara",
       thumbnail: "assets/images/video/thumbnail/thumbnail_4.png",
+      idYt: "bOrJb7wc3n4",
       bgColor: Color(0xffE8FFD6),
       decorationColor: Color(0xffC3FF93),
     ),
@@ -45,6 +49,7 @@ class HomeVideoController extends State<HomeVideoView> {
       title: "Macam-Macam Bangun Datar dan Rumusnya __ Matematika SD",
       author: "@BelajarChannel1",
       thumbnail: "assets/images/video/thumbnail/thumbnail_5.png",
+      idYt: "1ENevf_mFRs",
       bgColor: Color(0xffDFE0FF),
       decorationColor: Color(0xff9EA1D4),
     ),
@@ -68,6 +73,7 @@ class VideoModel {
   final String title;
   final String author;
   final String thumbnail;
+  final String idYt;
   final Color bgColor;
   final Color decorationColor;
 
@@ -76,6 +82,7 @@ class VideoModel {
     required this.title,
     required this.author,
     required this.thumbnail,
+    required this.idYt,
     required this.bgColor,
     required this.decorationColor,
   });
