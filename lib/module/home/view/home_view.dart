@@ -122,20 +122,23 @@ class HomeView extends StatefulWidget {
                 const SizedBox(
                   height: 24.0,
                 ),
-                const Row(
+                Row(
                   children: [
                     Expanded(
                       child: CaredMenuHome(
-                        color: Color(0xffFFB8B8),
+                        color: const Color(0xffFFB8B8),
                         svgAsset: "assets/images/home/buku_paket.svg",
                         title: "Buku Paket",
                         subtitle: "Matematika",
+                        onTap: () {
+                          Get.to(const HomeBukuView());
+                        },
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 43.0,
                     ),
-                    Expanded(
+                    const Expanded(
                       child: CaredMenuHome(
                         color: Color(0xffC8FF9E),
                         svgAsset: "assets/images/home/uji_kemampuan.svg",

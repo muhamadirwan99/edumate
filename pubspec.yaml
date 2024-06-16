@@ -36,6 +36,7 @@ dependencies:
   change_app_package_name: ^1.2.0
   youtube_player_flutter: ^9.0.1
   screen_size_test: ^1.0.2+3
+  easy_pdf_viewer: ^1.0.8
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -63,9 +64,11 @@ flutter:
     - assets/images/materi/detail_materi/
     - assets/images/materi/image_materi/
     - assets/images/buku/
+    - assets/images/buku/thumbnail/
     - assets/images/background/
     - assets/icons/misc/
     - assets/icons/video/
+    - assets/pdf/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see

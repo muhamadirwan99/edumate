@@ -4,6 +4,11 @@ If there is a conflicting class name in this file,
 it means you have to rename it to something more unique.
 */
 export 'package:edumate/core_package.dart';
+export 'package:edumate/module/buku/detail_buku/controller/detail_buku_controller.dart';
+export 'package:edumate/module/buku/detail_buku/view/detail_buku_view.dart';
+export 'package:edumate/module/buku/home_buku/controller/home_buku_controller.dart';
+export 'package:edumate/module/buku/home_buku/view/home_buku_view.dart';
+export 'package:edumate/module/buku/home_buku/widget/card_buku.dart';
 export 'package:edumate/module/home/controller/home_controller.dart';
 export 'package:edumate/module/home/view/home_view.dart';
 export 'package:edumate/module/home/widget/card_menu_home.dart';
