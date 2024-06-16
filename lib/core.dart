@@ -13,10 +13,10 @@ export 'package:edumate/module/materi/home_materi/controller/home_materi_control
 export 'package:edumate/module/materi/home_materi/view/home_materi_view.dart';
 export 'package:edumate/module/materi/image_materi/controller/image_materi_controller.dart';
 export 'package:edumate/module/materi/image_materi/view/image_materi_view.dart';
-export 'package:edumate/module/materi/rumus_materi/controller/rumus_materi_controller.dart';
-export 'package:edumate/module/materi/rumus_materi/view/rumus_materi_view.dart';
-export 'package:edumate/module/materi/sifat_materi/controller/sifat_materi_controller.dart';
-export 'package:edumate/module/materi/sifat_materi/view/sifat_materi_view.dart';
+export 'package:edumate/module/materi/sifat_rumus_materi/controller/sifat_rumus_materi_controller.dart';
+export 'package:edumate/module/materi/sifat_rumus_materi/view/sifat_rumus_materi_view.dart';
+export 'package:edumate/module/materi/sifat_rumus_materi/widget/content_rumus.dart';
+export 'package:edumate/module/materi/sifat_rumus_materi/widget/content_sifat.dart';
 export 'package:edumate/module/splashscreen/controller/splashscreen_controller.dart';
 export 'package:edumate/module/splashscreen/view/splashscreen_view.dart';
 export 'package:edumate/shared/common/style.dart';

@@ -107,7 +107,10 @@ class DetailMateriView extends StatefulWidget {
                                   InkWell(
                                     onTap: () {
                                       Get.to(
-                                        SifatMateriView(kdMateri: kdMateri),
+                                        SifatRumusMateriView(
+                                          kdMateri: kdMateri,
+                                          isSifat: true,
+                                        ),
                                       );
                                     },
                                     child: Container(
@@ -143,7 +146,10 @@ class DetailMateriView extends StatefulWidget {
                                   InkWell(
                                     onTap: () {
                                       Get.to(
-                                        RumusMateriView(kdMateri: kdMateri),
+                                        SifatRumusMateriView(
+                                          kdMateri: kdMateri,
+                                          isSifat: false,
+                                        ),
                                       );
                                     },
                                     child: Container(
