@@ -124,12 +124,13 @@ class DetailVideoView extends StatefulWidget {
                                   ),
                                 ],
                               ),
-                              child: Icon(
-                                controller.ytController.value.isPlaying
-                                    ? Icons.pause
-                                    : Icons.play_arrow,
-                                size: 40,
-                                color: primaryColor,
+                              child: Padding(
+                                padding: const EdgeInsets.all(14),
+                                child: SvgPicture.asset(
+                                  controller.ytController.value.isPlaying
+                                      ? "assets/icons/video/pause.svg"
+                                      : "assets/icons/video/play_detail.svg",
+                                ),
                               ),
                             ),
                           ),

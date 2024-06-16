@@ -7,7 +7,9 @@
         "materi/sifat_rumus_materi",
         "materi/image_materi",
         "video/home_video",
-        "video/detail_video"
+        "video/detail_video",
+        "buku/home_buku",
+        "buku/detail_buku"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
