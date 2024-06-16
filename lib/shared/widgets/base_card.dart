@@ -20,7 +20,7 @@ class BaseCard extends StatelessWidget {
             color: Colors.black.withOpacity(0.25),
             spreadRadius: 0,
             blurRadius: 12,
-            offset: const Offset(-5, -3), // changes position of shadow
+            offset: const Offset(-5, -3),
           ),
         ],
         borderRadius: isBorderRadiusAll

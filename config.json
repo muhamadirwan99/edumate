@@ -1,7 +1,11 @@
 {
     "modules": [
         "splashscreen",
-        "home"
+        "home",
+        "materi/home_materi",
+        "materi/detail_materi",
+        "materi/sifat_rumus_materi",
+        "materi/image_materi"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
