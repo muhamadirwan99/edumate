@@ -104,11 +104,14 @@ class HomeView extends StatefulWidget {
                     const SizedBox(
                       width: 43.0,
                     ),
-                    const CaredMenuHome(
-                      color: Color(0xff9FC8FF),
+                    CaredMenuHome(
+                      color: const Color(0xff9FC8FF),
                       svgAsset: "assets/images/home/video.svg",
                       title: "Video",
                       subtitle: "Pembelajaran ",
+                      onTap: () {
+                        Get.to(const HomeVideoView());
+                      },
                     ),
                   ],
                 ),

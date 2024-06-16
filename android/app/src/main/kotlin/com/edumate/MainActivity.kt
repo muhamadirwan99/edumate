@@ -1,4 +1,4 @@
-package com.example.edumate
+package com.edumate
 
 import io.flutter.embedding.android.FlutterActivity
 

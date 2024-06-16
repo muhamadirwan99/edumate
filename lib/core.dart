@@ -19,9 +19,14 @@ export 'package:edumate/module/materi/sifat_rumus_materi/widget/content_rumus.da
 export 'package:edumate/module/materi/sifat_rumus_materi/widget/content_sifat.dart';
 export 'package:edumate/module/splashscreen/controller/splashscreen_controller.dart';
 export 'package:edumate/module/splashscreen/view/splashscreen_view.dart';
+export 'package:edumate/module/video/detail_video/controller/detail_video_controller.dart';
+export 'package:edumate/module/video/detail_video/view/detail_video_view.dart';
+export 'package:edumate/module/video/home_video/controller/home_video_controller.dart';
+export 'package:edumate/module/video/home_video/view/home_video_view.dart';
 export 'package:edumate/shared/common/style.dart';
 export 'package:edumate/shared/widgets/base_body.dart';
 export 'package:edumate/shared/widgets/base_card.dart';
 export 'package:edumate/shared/widgets/custom_appbar.dart';
+export 'package:edumate/shared/widgets/video/card_video.dart';
 export 'package:edumate/state_util.dart';
 export 'core_package.dart';
