@@ -65,6 +65,7 @@ flutter:
     - assets/images/materi/image_materi/
     - assets/images/buku/
     - assets/images/buku/thumbnail/
+    - assets/images/uji_kemampuan/
     - assets/images/background/
     - assets/icons/misc/
     - assets/icons/video/
