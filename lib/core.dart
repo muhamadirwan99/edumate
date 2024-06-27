@@ -30,6 +30,9 @@ export 'package:edumate/module/splashscreen/controller/splashscreen_controller.d
 export 'package:edumate/module/splashscreen/view/splashscreen_view.dart';
 export 'package:edumate/module/uji_kemampuan/detail_uji_kemampuan/controller/detail_uji_kemampuan_controller.dart';
 export 'package:edumate/module/uji_kemampuan/detail_uji_kemampuan/view/detail_uji_kemampuan_view.dart';
+export 'package:edumate/module/uji_kemampuan/detail_uji_kemampuan/widget/correct_answer_dialog.dart';
+export 'package:edumate/module/uji_kemampuan/detail_uji_kemampuan/widget/custom_progress_indicator.dart';
+export 'package:edumate/module/uji_kemampuan/detail_uji_kemampuan/widget/wrong_answer_dialog.dart';
 export 'package:edumate/module/uji_kemampuan/hasil_uji_kemampuan/controller/hasil_uji_kemampuan_controller.dart';
 export 'package:edumate/module/uji_kemampuan/hasil_uji_kemampuan/view/hasil_uji_kemampuan_view.dart';
 export 'package:edumate/module/uji_kemampuan/home_uji_kemampuan/controller/home_uji_kemampuan_controller.dart';
@@ -39,6 +42,7 @@ export 'package:edumate/module/video/detail_video/view/detail_video_view.dart';
 export 'package:edumate/module/video/home_video/controller/home_video_controller.dart';
 export 'package:edumate/module/video/home_video/view/home_video_view.dart';
 export 'package:edumate/shared/common/style.dart';
+export 'package:edumate/shared/utils/text_rich_utils.dart';
 export 'package:edumate/shared/widgets/base_body.dart';
 export 'package:edumate/shared/widgets/base_card.dart';
 export 'package:edumate/shared/widgets/custom_appbar.dart';
