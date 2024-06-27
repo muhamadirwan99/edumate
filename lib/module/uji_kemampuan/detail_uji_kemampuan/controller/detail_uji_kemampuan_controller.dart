@@ -168,8 +168,11 @@ class DetailUjiKemampuanController extends State<DetailUjiKemampuanView> {
       score = score + 10;
     }
     if (index + 1 == questions.length) {
-      print("Score: $score");
-      // Get.offAll(const HasilUjiKemampuanView());
+      Get.offAll(
+        HasilUjiKemampuanView(
+          score: score.toString(),
+        ),
+      );
       return;
     } else {}
 

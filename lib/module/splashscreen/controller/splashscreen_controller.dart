@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:edumate/core.dart';
-import '../view/splashscreen_view.dart';
 
 class SplashscreenController extends State<SplashscreenView> {
   static late SplashscreenController instance;
