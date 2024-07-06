@@ -8,9 +8,32 @@ class HomeUjiKemampuanView extends StatefulWidget {
     controller.view = this;
 
     return Scaffold(
-      appBar: CustomAppbar(
-        title: "Uji Kemampuan",
-        appBar: AppBar(),
+      appBar: AppBar(
+        leading: InkWell(
+          onTap: () => Get.offAll(const HomeView()),
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: SvgPicture.asset(
+              "assets/icons/misc/back.svg",
+            ),
+          ),
+        ),
+        title: const Center(
+          child: Text(
+            "Uji Kemampuan",
+          ),
+        ),
+        actions: [
+          InkWell(
+            onTap: () => Get.offAll(const HomeView()),
+            child: Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: SvgPicture.asset(
+                "assets/icons/misc/home.svg",
+              ),
+            ),
+          ),
+        ],
       ),
       body: BaseBody(
         child: SingleChildScrollView(
@@ -129,7 +152,38 @@ class HomeUjiKemampuanView extends StatefulWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      Get.to(const HomePembahasanView());
+                      PembahasanDatabase.kdPembahasan == "1"
+                          ? Get.to(const HomePembahasanView())
+                          : showDialog(
+                              context: context,
+                              builder: (context) {
+                                return AlertDialog(
+                                  title: Text(
+                                    "Silahkan Melakukan Uji Kemampuan Terlebih Dahulu",
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      color: primaryColor,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                  actionsAlignment: MainAxisAlignment.center,
+                                  actions: [
+                                    TextButton(
+                                      onPressed: () => Navigator.pop(context),
+                                      child: Text(
+                                        "Oke",
+                                        style: GoogleFonts.montserrat(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                          color: primaryColor,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                );
+                              },
+                            );
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,

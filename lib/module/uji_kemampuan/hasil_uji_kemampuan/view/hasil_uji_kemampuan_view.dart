@@ -15,7 +15,7 @@ class HasilUjiKemampuanView extends StatefulWidget {
     return Scaffold(
       appBar: AppBar(
         leading: InkWell(
-          onTap: () => Get.to(const HomeUjiKemampuanView()),
+          onTap: () => Get.offAll(const HomeUjiKemampuanView()),
           child: Padding(
             padding: const EdgeInsets.all(12.0),
             child: SvgPicture.asset(

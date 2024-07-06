@@ -168,6 +168,7 @@ class DetailUjiKemampuanController extends State<DetailUjiKemampuanView> {
       score = score + 10;
     }
     if (index + 1 == questions.length) {
+      PembahasanDatabase.save("1");
       Get.offAll(
         HasilUjiKemampuanView(
           score: score.toString(),

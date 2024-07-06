@@ -4,6 +4,9 @@ If there is a conflicting class name in this file,
 it means you have to rename it to something more unique.
 */
 export 'package:edumate/core_package.dart';
+export 'package:edumate/database/main_storage.dart';
+export 'package:edumate/database/pembahasan_database.dart';
+export 'package:edumate/firebase_options.dart';
 export 'package:edumate/module/buku/detail_buku/controller/detail_buku_controller.dart';
 export 'package:edumate/module/buku/detail_buku/view/detail_buku_view.dart';
 export 'package:edumate/module/buku/home_buku/controller/home_buku_controller.dart';
