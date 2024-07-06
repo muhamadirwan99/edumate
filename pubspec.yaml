@@ -67,6 +67,9 @@ flutter:
     - assets/images/buku/thumbnail/
     - assets/images/uji_kemampuan/
     - assets/images/uji_kemampuan/detail/
+    - assets/images/pembahasan/
+    - assets/images/pembahasan/detail/
+    - assets/images/pembahasan/detail/icon/
     - assets/images/background/
     - assets/icons/misc/
     - assets/icons/video/
