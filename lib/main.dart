@@ -1,7 +1,27 @@
 import 'package:edumate/core.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:path_provider/path_provider.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  if (!kIsWeb) {
+    var path = await getTemporaryDirectory();
+    Hive.init(path.path);
+  }
+
+  mainStorage = await Hive.openBox('mainStorage');
+
+  PembahasanDatabase.load();
+
+  PembahasanDatabase.kdPembahasan = mainStorage.get("kdPembahasan") ?? "";
+
   runApp(const MyApp());
 }
 

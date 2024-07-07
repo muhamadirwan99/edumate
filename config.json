@@ -9,7 +9,12 @@
         "video/home_video",
         "video/detail_video",
         "buku/home_buku",
-        "buku/detail_buku"
+        "buku/detail_buku",
+        "uji_kemampuan/home_uji_kemampuan",
+        "uji_kemampuan/detail_uji_kemampuan",
+        "uji_kemampuan/hasil_uji_kemampuan",
+        "pembahasan/home_pembahasan",
+        "pembahasan/detail_pembahasan"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,

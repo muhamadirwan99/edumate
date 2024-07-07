@@ -105,6 +105,7 @@ class HomeVideoView extends StatefulWidget {
                               DetailVideoView(
                                 videoModel: videoModel,
                                 videoList: videoListCopy,
+                                indexFromList: index,
                               ),
                             );
                           },

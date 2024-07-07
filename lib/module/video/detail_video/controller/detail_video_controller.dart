@@ -41,6 +41,7 @@ class DetailVideoController extends State<DetailVideoView> {
   @override
   void initState() {
     instance = this;
+    index = widget.indexFromList;
     selectedVideoModel = widget.videoModel;
     videoList = widget.videoList;
     videoListFiltered = widget.videoList;
