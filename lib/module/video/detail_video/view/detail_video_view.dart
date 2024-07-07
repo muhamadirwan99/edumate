@@ -5,11 +5,13 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 class DetailVideoView extends StatefulWidget {
   final VideoModel videoModel;
   final List<VideoModel> videoList;
+  final int indexFromList;
 
   const DetailVideoView({
     super.key,
     required this.videoModel,
     required this.videoList,
+    required this.indexFromList,
   });
 
   Widget build(context, DetailVideoController controller) {
@@ -31,7 +33,8 @@ class DetailVideoView extends StatefulWidget {
           ),
           body: Container(
             decoration: BoxDecoration(
-              color: videoModel.decorationColor,
+              color: controller
+                  .videoListFiltered[controller.index].decorationColor,
               image: const DecorationImage(
                 image: AssetImage('assets/images/background/background.png'),
                 fit: BoxFit.cover,
@@ -77,7 +80,7 @@ class DetailVideoView extends StatefulWidget {
                               controller.ytController.load(controller
                                   .videoListFiltered[controller.index].idYt);
 
-                              // controller.update();
+                              controller.update();
                             },
                             child: Container(
                               width: 55,
@@ -146,7 +149,7 @@ class DetailVideoView extends StatefulWidget {
                               controller.ytController.load(controller
                                   .videoListFiltered[controller.index].idYt);
 
-                              // controller.update();
+                              controller.update();
                             },
                             child: Container(
                               width: 55,
@@ -227,11 +230,14 @@ class DetailVideoView extends StatefulWidget {
                                         onTap: () {
                                           controller.ytController
                                               .load(videoModel.idYt);
+
                                           controller.switchVideo(
                                             controller.selectedVideoModel,
                                             videoModel,
                                             index,
                                           );
+                                          controller.index = 0;
+                                          controller.update();
                                         },
                                         title: videoModel.title,
                                         author: videoModel.author,
