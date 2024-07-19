@@ -25,7 +25,7 @@ class DetailUjiKemampuanController extends State<DetailUjiKemampuanView> {
     ),
     QuestionModel(
       question: markBold(
-        "Sebuah kolam berenang yang berbentuk persegi panjang memiliki panjang kolam 5 meter dan lebar kolam 3 meter. Berapakah luas kolam berenang tersebut . . . m",
+        "Sebuah kolam berenang yang berbentuk persegi panjang memiliki panjang kolam 5 meter dan lebar kolam 3 meter. Berapakah luas kolam berenang tersebut . . . m²",
         "persegi panjang",
       ),
       progressColor: const Color(0xffCFFFFF),
@@ -116,7 +116,7 @@ class DetailUjiKemampuanController extends State<DetailUjiKemampuanView> {
     ),
     QuestionModel(
       question: markBold(
-        "Alex bermain di lapangan yang berbentuk persegi panjang dengan panjang 12 m dan lebar 5 m. Maka luas lapangan tersebut adalah . . . m",
+        "Alex bermain di lapangan yang berbentuk persegi panjang dengan panjang 12 m dan lebar 5 m. Maka luas lapangan tersebut adalah . . . m²",
         "persegi panjang",
       ),
       progressColor: const Color(0xffFFE7C3),
